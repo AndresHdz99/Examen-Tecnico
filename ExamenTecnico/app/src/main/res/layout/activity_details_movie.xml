@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsMovie"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+        <Spinner
+            android:id="@+id/lenguage"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imagemoviedl"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="300dp"
+        android:layout_height="300dp"/>
+
+    <TextView
+        android:id="@+id/titlemoviedl"
+        android:layout_marginVertical="15dp"
+        android:text="Titulo"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/reciclerCategorias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/overview"
+        android:text="Descripcion"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>
